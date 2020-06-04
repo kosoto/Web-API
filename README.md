@@ -12,3 +12,8 @@
 - 오라클 연동
 - Web Socket 통신
 - (Optional) Vue.js 적용
+
+## 진행사항
+
+- Oracle-JPA 연동 (2020/06/03)
+- Swagger 적용 (2020/06/04)
