@@ -1,0 +1,17 @@
+server:
+  port: 8000
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true #운영시 false
+  datasource:
+    url: jdbc:oracle:thin:@localhost:orcl11
+    username: secret
+    password: secret
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 5  
+
