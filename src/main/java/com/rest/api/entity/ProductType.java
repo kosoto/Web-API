@@ -1,4 +1,4 @@
-package com.rest.api.model;
+package com.rest.api.entity;
 
 
 import java.util.Date;

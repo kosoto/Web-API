@@ -7,11 +7,15 @@ spring:
       ddl-auto: none
     show-sql: true #운영시 false
   datasource:
-    url: jdbc:oracle:thin:@localhost:orcl11
-    username: secret
-    password: secret
+    url: jdbc:oracle:thin:@192.168.10.20:1521:orcl11
+    username: rdm
+    password: ibks2015!
     driver-class-name: oracle.jdbc.OracleDriver
     hikari:
       connection-timeout: 60000
-      maximum-pool-size: 5  
-
+      maximum-pool-size: 5 
+  messages:
+    basename: i18n/exception
+    encoding: UTF-8
+  jwt:
+    secret: govlepel@$&
