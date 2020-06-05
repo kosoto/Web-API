@@ -2,15 +2,11 @@ server:
   port: 8000
 
 spring:
+  profiles:
+    active: local    
   jpa:
     hibernate:
-      ddl-auto: none
-    show-sql: true #운영시 false
-  datasource:
-    url: jdbc:oracle:thin:@192.168.10.20:1521:orcl11
-    username: rdm
-    password: ibks2015!
-    driver-class-name: oracle.jdbc.OracleDriver
+      ddl-auto: none      
     hikari:
       connection-timeout: 60000
       maximum-pool-size: 5 
@@ -19,3 +15,44 @@ spring:
     encoding: UTF-8
   jwt:
     secret: govlepel@$&
+    
+---
+
+spring:
+  profiles: local
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl11
+    username: secret
+    password: secret
+    driver-class-name: oracle.jdbc.OracleDriver
+  url:
+    base: http://localhost:8000
+
+logging:
+  level:
+    root: warn
+    com.rest.api: debug
+  
+---
+
+spring:
+  profiles: dev
+  
+---
+
+spring:
+  profiles: ops
+  jpa:
+    show-sql: false
+  
+logging:
+  level:
+    root: warn
+    com.rest.api: info  
+  file:
+    path: /api/log
+    max-history: 7
+  
+  
