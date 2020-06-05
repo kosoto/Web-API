@@ -15,5 +15,13 @@
 
 ## 진행사항
 
-- Oracle-JPA 연동 (2020/06/03)
-- Swagger 적용 (2020/06/04)
+- Oracle-JPA 연동 (06/03)
+- Swagger 적용 (06/04)
+- Security 적용 (06/05)
+
+## 참고 사이트
+
+- https://daddyprogrammer.org/post/series/springboot2-make-rest-api/
+- https://spring.io/guides/gs/rest-service/
+- https://waspro.tistory.com/512
+- http://blog.naver.com/PostView.nhn?blogId=scw0531&logNo=221105180348&redirect=Dlog&widgetTypeCall=true&directAccess=false
