@@ -65,6 +65,12 @@
 		    <artifactId>springfox-swagger-ui</artifactId>
 		    <version>2.6.1</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>net.rakugakibox.util</groupId>
+		    <artifactId>yaml-resource-bundle</artifactId>
+		    <version>1.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
