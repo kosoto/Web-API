@@ -15,5 +15,6 @@
 
 ## 진행사항
 
-- Oracle-JPA 연동 (2020/06/03)
-- Swagger 적용 (2020/06/04)
+- Oracle-JPA 연동 (06/03)
+- Swagger 적용 (06/04)
+- Security 적용 (06/05)
